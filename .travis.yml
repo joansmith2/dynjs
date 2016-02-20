@@ -1,9 +1,8 @@
+---
 language: java
 install: mvn install -s support/settings.xml -DskipTests=true -P,-version
 script: mvn test -s support/settings.xml -P,-version
 jdk:
-  - oraclejdk7
-  - oraclejdk8
-  - openjdk7
-notifications:
-  irc: "irc.freenode.org#dynjs"
+- oraclejdk7
+- oraclejdk8
+- openjdk7
